@@ -6,8 +6,11 @@ import plotly.graph_objects as go
 from datetime import datetime
 import json
 import uuid
+import streamlit as st
 
-API_URL = "http://localhost:8000"
+API_URL = st.secrets["BACKEND_URL"]
+
+
 
 st.set_page_config(
     page_title="Patient Management System",
